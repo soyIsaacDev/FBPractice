@@ -1,0 +1,159 @@
+.post-contanier{
+    width: 30vw;
+    height: 72vh;
+    margin-left: 45vw;
+    margin-top: 10vh;
+    position: absolute;
+}
+    .userBar{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+        .userIcon-Container{
+            width: 15%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+            .userIcon{
+                border-radius: 50%;
+            }
+        .nameDate-Bar{
+            width: 75%;
+            height: 100%;
+        }
+            .userName{
+                width: 100%;
+                height: 50%;
+                margin: 0px auto;
+                font-weight: 600;
+            }
+            .Date{
+                width: 100%;
+                height: 50%;
+                margin: 0px auto;
+            }
+        .post-Menu{
+            width: 10%;
+            height: 100%;
+            margin: 0px auto;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+        
+    .post-content-container{
+        height: 10%;
+        width: 100%;
+        font-size: 1.5rem;
+        border-bottom: rgb(184, 181, 181) 1px solid;
+        margin: 0 auto;
+        position: relative;
+    }
+        .post-content{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    .image-container{
+        width: 100%;
+        height: 60%;
+        margin: 0px auto;
+    }
+        .imagen{
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    .barraMeGusta{
+        width: 100%;
+        height: 5%;
+        margin-top: 3%;
+        padding-top: 1%;
+        border-top: rgb(184, 181, 181) 1px solid;
+        padding-bottom: 1%;
+        border-bottom: rgb(184, 181, 181) 1px solid;
+        font-size: 1rem;
+        font-weight: 550;
+        color:gray;
+        display: flex;
+        flex-wrap: wrap;
+    }
+        .meGusta{
+            width: 33%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;    
+        }
+            .meGustaIcon{
+                background-image: url(./Img/me-gusta.png);
+                width: 15%;
+                height: 100%;
+                font-weight: 1000;
+                font-size:2rem;
+                color: gray;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            .meGustaSpan{
+                width: 65%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        
+    .Comentarios{
+        height: 7%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+        .userIcon-comments-container{
+            width: 10%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+            .userIcon-comments{
+                width: 80%;
+                height: 80%;
+                border-radius: 50%; 
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+            }
+        .comment-input-container{
+            width: 90%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;            
+        }
+            .comment-input{
+                width: 90%;
+                height: 70%;
+                padding-left:3%;
+                justify-content: center;
+                align-items: center;  
+                border-radius: 15px; 
+                border: none;
+                outline: none;
+                background-color: rgb(214, 210, 210);
+            }
+            .comment-input-fotos{
+                width: 10%;
+                height: 90%;
+                background-color: lightskyblue;
+            }
+/* me queda 3% para colocar en altura */
