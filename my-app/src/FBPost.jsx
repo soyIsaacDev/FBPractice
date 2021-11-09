@@ -1,17 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import React, { useState } from 'react';
+import './FBPost.css';
 import imagenPost from "./Img/post.jpg";
 import userImage from "./Img/UserImg.jpg";
 
 
-const rootElement = document.getElementById("root");
 
-const postContent = "Seria un buen disfraz jaja";
-var date = "03 de Noviembre del 2021";
-var userName = "Isaac Borbon";
+export default function FacebookPost (props){
+    const [comment, setComment] = React.useState("");
+    const handleChange = event => setComment(oldComment => [...oldComment, event.target.value])
 
-export default function FBPost (){
+    const postContent = "Seria un buen disfraz ja";
+    var date = "03 de Noviembre del 2021";
+    var userName = "Isaac Borbon";
     return(      
         <div className = "post-contanier">
             <div className = "userBar" >
@@ -54,10 +54,16 @@ export default function FBPost (){
                 <img className = "userIcon-comments" src={userImage} alt="User Avatar" />
                 </div>
                 <div className = "comment-input-container">
-                    <input className = "comment-input" type="text" name="" id="" placeholder="Escribe un comentario"/>                  
+                    <p>Comentario: {comment}</p>
+                    <input className = "comment-input" type="text" name="" id="" placeholder="Escribe un comentario"
+                        onChange = {handleChange}
+                    />                 
+                    
                 </div>
             </div>
             <div></div>
         </div>
     )
  };
+
+ 
