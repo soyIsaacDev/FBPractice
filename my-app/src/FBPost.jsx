@@ -5,9 +5,19 @@ import userImage from "./Img/UserImg.jpg";
 
 
 
-export default function FacebookPost (props){
-    const [comment, setComment] = React.useState("");
-    const handleChange = event => setComment(oldComment => [...oldComment, event.target.value])
+export default function FacebookPost ({writeComment}){
+    const [comment, setComment] = useState("");
+
+    const handleChange = (event) => {
+        event.preventDefault();
+        setComment(event.target.value)        
+    }
+    
+    const handleClick = event => {
+        event.preventDefault();
+        writeComment(comment); 
+    }
+    
 
     const postContent = "Seria un buen disfraz ja";
     var date = "03 de Noviembre del 2021";
@@ -53,12 +63,16 @@ export default function FacebookPost (props){
                 <div className = "userIcon-comments-container">
                 <img className = "userIcon-comments" src={userImage} alt="User Avatar" />
                 </div>
-                <div className = "comment-input-container">
-                    <p>Comentario: {comment}</p>
-                    <input className = "comment-input" type="text" name="" id="" placeholder="Escribe un comentario"
+                <div className = "comment-input-container">                    
+                    <input className = "comment-input" type="text" 
+                        name="" id="" 
+                        placeholder="Escribe un comentario"
                         onChange = {handleChange}
-                    />                 
-                    
+                    />   
+                    <button className="comment-button"
+                        onClick = {handleClick}
+                    >   A
+                    </button>           
                 </div>
             </div>
             <div></div>
