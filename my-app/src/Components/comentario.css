@@ -1,6 +1,10 @@
 
 .comentario{
     background-color:  rgb(214, 210, 210);
-    height: auto;
-    width: 24.3vw;
+    height: 4vh;
+    width: 25.41vw;
+    margin-bottom: 1px;
+    margin-top: 1vh;
+    margin-left: 49vw;
+    border-radius: 10px;
 }

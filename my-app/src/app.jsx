@@ -2,8 +2,8 @@ import React from 'react';
 import { useState } from 'react';
 import ReactDOM from 'react-dom';
 import FBPost from './FBPost';
-import Comentario from './Components/Comentario';
 import Comentarios from './Components/Comentariosss';
+import AddComment from './Components/AddComment';
 
 const rootElement = document.getElementById("root");
 const element = <FBPost/>
@@ -21,9 +21,10 @@ ReactDOM.render(element, rootElement);
 
     return(
         <div className="App">
-            <FBPost writeComment = {writeComment}></FBPost>
+            <FBPost ></FBPost>
             {/* <Comentario comentario = {comments}/> */}
             <Comentarios comments = {comments}></Comentarios>
+            <AddComment writeComment = {writeComment} ></AddComment>
         </div>
     )
     

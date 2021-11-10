@@ -4,7 +4,7 @@
     margin-left: 45vw;
     margin-top: 10vh;
     display: flex;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
     .userBar{
         width: 100%;
@@ -109,7 +109,7 @@
                 align-items: center;
             }
         
-    .Comentarios{
+    /* .Comentarios{
         height: 9%;
         padding-top:1%;
         width: 100%;
@@ -157,5 +157,5 @@
                 width: 10%;
                 height: 90%;
                 background-color: lightskyblue;
-            }
+            } */
 /* me queda 3% para colocar en altura */
